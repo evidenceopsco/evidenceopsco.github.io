@@ -1,74 +1,88 @@
+/* EvidenceOps — professional landing page
+   Design direction (inspired by UI/UX Pro Max): Trust & Authority, minimal, WCAG-friendly.
+*/
 :root{
-  --bg:#0b1020;
-  --panel:#0f1730;
-  --text:#e9eefc;
-  --muted:#a9b6e6;
-  --accent:#7c5cff;
-  --border:rgba(255,255,255,.12);
-  --shadow: 0 10px 30px rgba(0,0,0,.35);
+  --bg:#ffffff;
+  --panel:#ffffff;
+  --text:#0b1220;
+  --muted:#4b5565;
+  --muted2:#6b7280;
+  --brand:#3b82f6;
+  --brand2:#1d4ed8;
+  --border:rgba(15,23,42,.12);
+  --shadow: 0 14px 40px rgba(2,6,23,.08);
+  --shadow2: 0 8px 18px rgba(2,6,23,.06);
+  --radius:16px;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-  background: radial-gradient(1200px 800px at 20% 0%, rgba(124,92,255,.25), transparent 60%),
-              radial-gradient(900px 600px at 90% 10%, rgba(0,201,255,.18), transparent 60%),
-              var(--bg);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
   color:var(--text);
-  line-height:1.5;
+  background:
+    radial-gradient(1000px 600px at 12% -10%, rgba(59,130,246,.12), transparent 55%),
+    radial-gradient(900px 520px at 90% 0%, rgba(29,78,216,.10), transparent 55%),
+    var(--bg);
+  line-height:1.55;
 }
 a{color:inherit; text-decoration:none}
-.wrap{max-width:1040px;margin:0 auto;padding:22px}
+.wrap{max-width:1100px;margin:0 auto;padding:24px}
+
+/* Header */
 .header{
   display:flex; align-items:center; justify-content:space-between; gap:16px;
-  position:sticky; top:0; backdrop-filter: blur(10px);
-  background: rgba(11,16,32,.65);
+  position:sticky; top:0; z-index:20;
+  background: rgba(255,255,255,.78);
+  backdrop-filter: blur(10px);
   border-bottom:1px solid var(--border);
-  z-index:10;
 }
 .brand{display:flex; align-items:center; gap:12px}
 .logo{
-  width:36px;height:36px;border-radius:10px;
+  width:36px;height:36px;border-radius:12px;
   display:grid;place-items:center;
-  background: linear-gradient(135deg, rgba(124,92,255,1), rgba(0,201,255,1));
+  background: linear-gradient(135deg, var(--brand), var(--brand2));
+  color:white;
   font-weight:800;
+  box-shadow: var(--shadow2);
 }
 .brand-name{font-weight:800; letter-spacing:.2px}
-.brand-tag{font-size:12px; color:var(--muted)}
+.brand-tag{font-size:12px; color:var(--muted2)}
 .nav{display:flex; align-items:center; gap:14px; flex-wrap:wrap; justify-content:flex-end}
 .nav a{font-size:14px; color:var(--muted)}
 .nav a:hover{color:var(--text)}
 
-.hero{display:grid; grid-template-columns: 1.3fr .9fr; gap:18px; padding-top:34px; padding-bottom:10px}
-.hero h1{font-size:44px; margin:0 0 10px; line-height:1.08}
-.accent{color:var(--accent)}
-.lead{color:var(--muted); font-size:18px; margin:0 0 16px}
-.sublead{color:var(--muted); font-size:15px; margin:0 0 14px; max-width: 72ch}
-.micro{color:var(--muted); font-size:12.5px; margin:14px 0 0}
+/* Hero */
+.hero{display:grid; grid-template-columns: 1.2fr .8fr; gap:18px; padding-top:42px; padding-bottom:6px}
+.hero h1{font-size:46px; margin:0 0 12px; line-height:1.08; letter-spacing:-.02em}
+.accent{color:var(--brand2)}
+.lead{color:var(--muted); font-size:18px; margin:0 0 16px; max-width: 70ch}
+.sublead{color:var(--muted2); font-size:15px; margin:0 0 14px; max-width: 78ch}
+.micro{color:var(--muted2); font-size:12.5px; margin:14px 0 0}
 .cta{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
 
-.trust{display:grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap:10px; margin-top:16px}
-.trust-item{padding:12px 12px; border:1px solid var(--border); border-radius:14px; background: rgba(255,255,255,.03)}
-.trust-k{font-size:12px; letter-spacing:.10em; text-transform:uppercase; color:var(--muted)}
-.trust-v{margin-top:6px; font-weight:700}
+/* Trust strip */
+.trust{display:grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap:12px; margin-top:18px}
+.trust-item{padding:14px 14px; border:1px solid var(--border); border-radius:14px; background: rgba(255,255,255,.75); box-shadow: var(--shadow2)}
+.trust-k{font-size:12px; letter-spacing:.10em; text-transform:uppercase; color:var(--muted2)}
+.trust-v{margin-top:6px; font-weight:750}
 
-.section{padding-top:34px; padding-bottom:0}
-.section h2{margin:0 0 10px; font-size:26px}
-
+/* Cards/boxes */
 .card, .box{
-  background: rgba(15,23,48,.78);
+  background: rgba(255,255,255,.85);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
 .card{padding:18px}
 .box{padding:18px}
-.kicker{font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted)}
+.kicker{font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted2)}
+
+.section{padding-top:38px; padding-bottom:0}
+.section h2{margin:0 0 10px; font-size:26px; letter-spacing:-.01em}
+.section h3{margin:0 0 8px; font-size:16px}
 
 .grid-3{display:grid; grid-template-columns: repeat(3, 1fr); gap:12px}
 .grid-2{display:grid; grid-template-columns: repeat(2, 1fr); gap:12px}
-
-h3{margin:0 0 8px; font-size:16px}
 
 .check, .dot{margin:10px 0 0; padding-left:18px; color:var(--muted)}
 .check li{margin:8px 0}
@@ -76,9 +90,9 @@ h3{margin:0 0 8px; font-size:16px}
 
 .pill{
   display:inline-block; padding:6px 10px; border-radius:999px;
-  background: rgba(124,92,255,.15);
-  border:1px solid rgba(124,92,255,.35);
-  color: #dcd7ff;
+  background: rgba(59,130,246,.10);
+  border:1px solid rgba(59,130,246,.22);
+  color: #0b1220;
   font-size:12px;
 }
 .card-foot{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px}
@@ -87,28 +101,39 @@ h3{margin:0 0 8px; font-size:16px}
   display:inline-flex; align-items:center; justify-content:center;
   padding:10px 14px; border-radius: 12px;
   border:1px solid var(--border);
-  font-weight:650; font-size:14px;
+  font-weight:700; font-size:14px;
+  box-shadow: var(--shadow2);
 }
 .btn-primary{
-  background: linear-gradient(135deg, rgba(124,92,255,1), rgba(0,201,255,1));
+  background: linear-gradient(135deg, var(--brand), var(--brand2));
   border-color: transparent;
-  color:#081022;
+  color:white;
 }
 .btn-secondary{
-  background: rgba(255,255,255,.04);
+  background: rgba(255,255,255,.85);
   color: var(--text);
 }
 .btn:hover{transform: translateY(-1px)}
 
 .pov{display:grid; grid-template-columns: repeat(2, 1fr); gap:12px}
 
-.footer{padding:38px 22px 44px}
+.hr{height:1px; background: var(--border); margin: 20px 0 0}
+
+.footer{padding:40px 24px 52px}
 .footer-inner{display:flex; align-items:flex-start; justify-content:space-between; gap:16px; border-top:1px solid var(--border); padding-top:18px}
 
-@media (max-width: 880px){
+/* Accessibility */
+:focus-visible{outline: 3px solid rgba(59,130,246,.35); outline-offset: 3px; border-radius: 10px}
+@media (prefers-reduced-motion: reduce){
+  *{scroll-behavior:auto !important; transition:none !important; animation:none !important}
+  .btn:hover{transform:none}
+}
+
+@media (max-width: 900px){
   .hero{grid-template-columns: 1fr;}
   .grid-3{grid-template-columns: 1fr;}
   .grid-2{grid-template-columns: 1fr;}
   .pov{grid-template-columns: 1fr;}
-  .hero h1{font-size:36px}
+  .trust{grid-template-columns: 1fr;}
+  .hero h1{font-size:38px}
 }

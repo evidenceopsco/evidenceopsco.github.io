@@ -8,6 +8,11 @@
     <meta property="og:description" content="Auditor-ready evidence packs for Google Workspace, GitHub, and Jira — with approval gates and audit trails." />
     <meta property="og:type" content="website" />
     <title>EvidenceOps — SOC 2 Evidence Pack in 14 Days</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -16,55 +21,57 @@
         <div class="logo" aria-hidden="true">E</div>
         <div>
           <div class="brand-name">EvidenceOps</div>
-          <div class="brand-tag">SOC2 Evidence, on rails</div>
+          <div class="brand-tag">SOC 2 evidence, on rails</div>
         </div>
       </div>
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary">
         <a href="#how">How it works</a>
         <a href="#deliverables">Deliverables</a>
         <a href="#security">Security</a>
+        <a href="#faq">FAQ</a>
         <a class="btn btn-secondary" href="#contact">Book a call</a>
       </nav>
     </header>
 
     <main>
-      <section class="wrap hero">
+      <section class="wrap hero" id="top">
         <div class="hero-copy">
           <h1>SOC 2 Type I evidence pack <span class="accent">in 14 days</span>.</h1>
           <p class="lead">
             EvidenceOps turns scattered proof into an <strong>auditor-ready evidence pack</strong> for
             <strong>Google Workspace</strong>, <strong>GitHub</strong>, and <strong>Jira</strong> — with
-            <strong>audit trails</strong>, <strong>approval gates</strong>, and an actionable gap backlog.
+            <strong>approval gates</strong>, <strong>audit trails</strong>, and an actionable gap backlog.
           </p>
           <div class="cta">
-            <!-- Replace the href with your Google Calendar booking link -->
             <a class="btn btn-primary" href="#contact">Book a 20‑min fit call</a>
             <a class="btn btn-secondary" href="#pov">See the 2‑week PoV</a>
           </div>
-          <div class="trust">
+
+          <div class="trust" aria-label="Trust highlights">
             <div class="trust-item"><div class="trust-k">Outcome</div><div class="trust-v">Evidence pack + backlog</div></div>
             <div class="trust-item"><div class="trust-k">Control</div><div class="trust-v">Approval gates + audit log</div></div>
-            <div class="trust-item"><div class="trust-k">Speed</div><div class="trust-v">14 days to a usable sample</div></div>
+            <div class="trust-item"><div class="trust-k">Speed</div><div class="trust-v">Sample in 14 days</div></div>
           </div>
+
           <p class="micro">
             We don’t replace your auditor. We make evidence collection repeatable, reviewable, and fast.
           </p>
         </div>
 
-        <div class="hero-card" role="region" aria-label="Summary">
+        <div class="hero-card" role="region" aria-label="PoV summary">
           <div class="card">
-            <div class="kicker">2-week PoV</div>
+            <div class="kicker">2‑week PoV</div>
             <ul class="check">
-              <li><strong>10</strong> SOC2 controls</li>
-              <li><strong>3</strong> data sources (Google Workspace + GitHub + Jira)</li>
+              <li><strong>10</strong> SOC 2 controls (high-frequency, evidence-friendly)</li>
+              <li><strong>3</strong> data sources: Google Workspace + GitHub + Jira</li>
               <li>Auditor-ready evidence pack + gap backlog</li>
               <li>Red-team audit notes (find contradictions early)</li>
             </ul>
             <div class="card-foot">
               <span class="pill">Type I</span>
               <span class="pill">Least privilege</span>
-              <span class="pill">Approval gates</span>
-              <span class="pill">Audit log</span>
+              <span class="pill">Human gates</span>
+              <span class="pill">Traceable</span>
             </div>
           </div>
         </div>
@@ -72,47 +79,19 @@
 
       <section id="how" class="wrap section">
         <h2>How it works</h2>
-        <p class="sublead">
-          A repeatable evidence pipeline with clear gates and traceability — designed for fast-moving SaaS teams.
-        </p>
+        <p class="sublead">A repeatable evidence pipeline with clear gates and traceability — designed for fast-moving SaaS teams.</p>
         <div class="grid-3">
           <div class="box">
             <h3>1) Collect</h3>
-            <p>
-              We collect evidence from Google Admin, GitHub org settings, and Jira workflows — exports,
-              links, and screenshots with timestamps.
-            </p>
+            <p class="sublead">Exports, links, and screenshots with timestamps — gathered from the systems you already use.</p>
           </div>
           <div class="box">
             <h3>2) Map & validate</h3>
-            <p>
-              Evidence is mapped to SOC 2 Trust Services Criteria (CC‑series). We highlight coverage,
-              inconsistencies, and missing artifacts.
-            </p>
+            <p class="sublead">Mapped to SOC 2 criteria (CC-series). We highlight missing artifacts and inconsistencies.</p>
           </div>
           <div class="box">
             <h3>3) Package for auditors</h3>
-            <p>
-              We generate policy → procedure → evidence narratives, plus change diffs so each audit cycle is faster than the last.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="who" class="wrap section">
-        <h2>Who it’s for</h2>
-        <div class="grid-3">
-          <div class="box">
-            <h3>SaaS founders & CTOs</h3>
-            <p class="muted">You’re getting blocked by enterprise procurement or security reviews.</p>
-          </div>
-          <div class="box">
-            <h3>Security owners</h3>
-            <p class="muted">You need a clean evidence trail without becoming a full-time screenshot machine.</p>
-          </div>
-          <div class="box">
-            <h3>Ops teams</h3>
-            <p class="muted">You want gaps translated into assignable backlog items, not vague recommendations.</p>
+            <p class="sublead">Policy → procedure → evidence narratives, plus change diffs so each audit cycle is faster than the last.</p>
           </div>
         </div>
       </section>
@@ -125,17 +104,17 @@
             <ul class="dot">
               <li>Evidence list (links/exports/screenshots)</li>
               <li>Source system + timestamp</li>
-              <li>Evidence chain narrative</li>
-              <li>Notes for auditors (what this evidence proves)</li>
+              <li>Evidence chain narrative (auditor-readable)</li>
+              <li>Notes that explain what each artifact proves</li>
             </ul>
           </div>
           <div class="box">
             <h3>Gap backlog (actionable)</h3>
             <ul class="dot">
-              <li>Exactly what’s missing</li>
-              <li>Suggested owner (Security/IT/Eng/People Ops)</li>
+              <li>Exactly what’s missing (and why it matters)</li>
+              <li>Suggested owner (Security / IT / Eng / People Ops)</li>
               <li>Priority + next step</li>
-              <li>Evidence acceptance criteria</li>
+              <li>Acceptance criteria for “done”</li>
             </ul>
           </div>
         </div>
@@ -146,32 +125,29 @@
         <div class="grid-3">
           <div class="box">
             <h3>Least privilege</h3>
-            <p>We request the minimum access necessary, scoped per data source.</p>
+            <p class="sublead">We request minimum access necessary, scoped per data source.</p>
           </div>
           <div class="box">
-            <h3>Human-in-the-loop gates</h3>
-            <p>Any high-risk action requires explicit approval (no surprises).</p>
+            <h3>Human-in-the-loop</h3>
+            <p class="sublead">Any high‑risk action requires explicit approval (no surprises).</p>
           </div>
           <div class="box">
             <h3>Audit log</h3>
-            <p>Every collection step is recorded so you can trace what happened and when.</p>
+            <p class="sublead">Every evidence collection step is recorded for traceability.</p>
           </div>
         </div>
-        <p class="micro">
-          We can run with customer-owned accounts and credentials. We never ask you to paste secrets into
-          documents.
-        </p>
+        <p class="micro">We can run with customer-owned accounts and credentials. We never ask you to paste secrets into documents.</p>
       </section>
 
       <section id="pov" class="wrap section">
-        <h2>2-week Proof of Value (PoV)</h2>
+        <h2>2‑week Proof of Value (PoV)</h2>
         <div class="box">
           <div class="pov">
             <div>
               <h3>Scope</h3>
               <ul class="dot">
                 <li>3 data sources: Google Workspace + GitHub + Jira</li>
-                <li>10 SOC2 controls (high-frequency, evidence-friendly)</li>
+                <li>10 SOC 2 controls (selected for fast evidence capture)</li>
                 <li>Output formats: PDF + Markdown (or your preference)</li>
               </ul>
             </div>
@@ -184,24 +160,44 @@
               </ul>
             </div>
           </div>
+          <div class="hr"></div>
+          <p class="micro">Typical fit: you’re getting blocked by enterprise procurement, customer security reviews, or you’ve started SOC 2 but evidence collection is stalling.</p>
+        </div>
+      </section>
+
+      <section id="faq" class="wrap section">
+        <h2>FAQ</h2>
+        <div class="grid-2">
+          <div class="box">
+            <h3>Do you replace our auditor?</h3>
+            <p class="sublead">No. We accelerate evidence collection and packaging so audits move faster with fewer surprises.</p>
+          </div>
+          <div class="box">
+            <h3>We already use Vanta/Drata.</h3>
+            <p class="sublead">Great. EvidenceOps complements them by producing auditor-ready narratives, reconciling inconsistencies, and turning gaps into actionable backlog.</p>
+          </div>
+          <div class="box">
+            <h3>How do you handle access?</h3>
+            <p class="sublead">Least privilege by default. High-risk actions require explicit approval. All activity is logged.</p>
+          </div>
+          <div class="box">
+            <h3>What’s the first step?</h3>
+            <p class="sublead">A 20‑minute fit call. If it’s a match, we run the 2‑week PoV and deliver a sample evidence pack.</p>
+          </div>
         </div>
       </section>
 
       <section id="contact" class="wrap section">
         <h2>Book a call</h2>
         <div class="box">
-          <p>
-            Reply to the outreach message or use your booking link.
-            <!-- Replace with a real booking link when ready -->
+          <p class="sublead">
+            Email us and we’ll schedule a 20‑minute fit call.
           </p>
           <div class="cta">
-            <a class="btn btn-primary" href="#">Book a 20-min fit call (add booking link)</a>
-            <a class="btn btn-secondary" href="mailto:evidenceopsco@gmail.com">evidenceopsco@gmail.com</a>
+            <a class="btn btn-primary" href="mailto:evidenceopsco@gmail.com?subject=EvidenceOps%20SOC%202%20PoV%20%E2%80%94%2020-min%20fit%20call&body=Hi%20EvidenceOps%2C%0A%0AWe%E2%80%99re%20interested%20in%20the%20SOC%202%20Type%20I%202-week%20PoV%20(Google%20Workspace%20%2B%20GitHub%20%2B%20Jira).%0A%0ACompany%3A%20%0ATimeline%3A%20%0AAny%20current%20GRC%20tool%20(Vanta%2FDrata%2Fnone)%3A%20%0A%0AThanks%21">Email: evidenceopsco@gmail.com</a>
+            <a class="btn btn-secondary" href="#">(Optional) Add booking link</a>
           </div>
-          <p class="micro">
-            On the call we’ll ask 6 questions (systems, scope, timeline) and tell you whether the 14-day PoV
-            will work for your stack.
-          </p>
+          <p class="micro">Next: we’ll ask 6 questions (systems, scope, timeline) and confirm PoV fit.</p>
         </div>
       </section>
 
@@ -209,7 +205,7 @@
         <div class="footer-inner">
           <div>
             <div class="brand-name">EvidenceOps</div>
-            <div class="micro">SOC2 evidence packs for fast-moving SaaS teams.</div>
+            <div class="micro">SOC 2 evidence packs for fast-moving SaaS teams.</div>
           </div>
           <div class="micro">© <span id="year"></span> EvidenceOps</div>
         </div>
