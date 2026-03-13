@@ -85,6 +85,18 @@ a{color:inherit; text-decoration:none}
 .hero-illustration{margin: 10px 0 14px}
 .hero-illustration svg{width:100%; height:auto}
 
+/* Screenshot gallery */
+.shots{display:grid; grid-template-columns: repeat(3, 1fr); gap:12px; margin-top:14px}
+.shot{margin:0}
+.shot-media{border:1px solid var(--border); border-radius: var(--radius); overflow:hidden; background: rgba(255,255,255,.9); box-shadow: var(--shadow2)}
+.shot-media svg{width:100%; height:auto; display:block}
+.shot figcaption{margin-top:8px; color:var(--muted); font-size:13px}
+
+/* Timeline */
+.timeline{margin:14px 0 0; padding:0; list-style:none; display:grid; gap:10px}
+.timeline li{padding:14px 14px; border:1px solid var(--border); border-radius: var(--radius); background: rgba(255,255,255,.88); box-shadow: var(--shadow2)}
+.muted{color:var(--muted)}
+
 /* Cards/boxes */
 .card, .box{
   background: rgba(255,255,255,.85);
@@ -160,6 +172,7 @@ a{color:inherit; text-decoration:none}
   .pov{grid-template-columns: 1fr;}
   .trust{grid-template-columns: 1fr;}
   .icon-grid{grid-template-columns: 1fr;}
+  .shots{grid-template-columns: 1fr;}
   .top-banner-inner{flex-direction:column; align-items:flex-start}
   .hero h1{font-size:36px}
 
