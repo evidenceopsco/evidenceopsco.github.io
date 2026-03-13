@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="EvidenceOps pricing — start with a 14-day SOC 2 Type I PoV, then move to monthly evidence operations." />
+    <meta property="og:title" content="EvidenceOps — Pricing" />
+    <meta property="og:description" content="Pricing structure for the SOC 2 evidence pack pipeline." />
+    <meta property="og:type" content="website" />
+    <title>EvidenceOps — Pricing</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css?v=20260313-4" />
+  </head>
+  <body>
+    <div class="top-banner" role="status" aria-label="Announcement">
+      <div class="wrap top-banner-inner">
+        <div class="banner-left">
+          <span class="badge">SOC 2 Type I</span>
+          <span class="banner-text">Start with a 14‑day PoV. Upgrade when ready.</span>
+        </div>
+        <a class="banner-link" href="/">Home</a>
+      </div>
+    </div>
+
+    <header class="wrap header">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M12 2l8 4v6c0 5-3.4 9.4-8 10-4.6-.6-8-5-8-10V6l8-4zm0 2.2L6 7v5c0 4 2.6 7.6 6 8.2 3.4-.6 6-4.2 6-8.2V7l-6-2.8z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="brand-name">EvidenceOps</div>
+          <div class="brand-tag">SOC 2 evidence, on rails</div>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/cases.html">Use cases</a>
+        <a href="/pricing.html" aria-current="page">Pricing</a>
+        <a href="/zh/">中文</a>
+        <a class="btn btn-secondary" href="/zh/#contact">Book a call</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="wrap section">
+        <h1 style="margin:0 0 8px; font-size:34px; letter-spacing:-.02em">Pricing (transparent structure)</h1>
+        <p class="sublead">We start with a fixed-scope Proof of Value. Then move to a monthly cadence if it works.</p>
+
+        <div class="grid-2">
+          <div class="box">
+            <h2 style="margin:0 0 6px; font-size:18px">14‑day PoV</h2>
+            <p class="sublead">A fixed-scope engagement to produce a usable evidence pack sample.</p>
+            <ul class="dot">
+              <li>10 controls (SOC 2 CC‑series focus)</li>
+              <li>3 systems: Google Workspace + GitHub + Jira</li>
+              <li>Deliverables: evidence pack sample + gap backlog + red-team notes</li>
+              <li>Response: within 1 business day after intake</li>
+            </ul>
+            <div class="cta" style="margin-top:12px">
+              <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdnrkjzy9IFTtMSmAmxPi7GMsTQfgXEnxtkjjBPmexbNM1qLg/viewform" target="_blank" rel="noopener">Request PoV</a>
+              <a class="btn btn-secondary" href="/assets/evidenceops-onepager-tw.pdf" target="_blank" rel="noopener">Download one‑pager</a>
+            </div>
+          </div>
+
+          <div class="box">
+            <h2 style="margin:0 0 6px; font-size:18px">Monthly evidence ops (after PoV)</h2>
+            <p class="sublead">For teams that want evidence to stay fresh, consistent, and auditable.</p>
+            <ul class="dot">
+              <li>Evidence refresh cadence (weekly / monthly)</li>
+              <li>Coverage & gaps tracked over time</li>
+              <li>Approval gates + audit trail maintained</li>
+              <li>Audit-season “accelerator” add‑on available</li>
+            </ul>
+            <p class="micro">Pricing depends on number of systems, controls, and refresh frequency. We’ll propose a tier after PoV.</p>
+          </div>
+        </div>
+
+        <div class="box" style="margin-top:12px">
+          <h2 style="margin:0 0 6px; font-size:18px">What we don’t do</h2>
+          <p class="sublead">To keep risk low and scope clear:</p>
+          <ul class="dot">
+            <li>No production changes without explicit approval</li>
+            <li>No “we guarantee 0 findings” promises (we reduce surprises with evidence quality + red-team notes)</li>
+            <li>No need to paste secrets into documents</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="wrap footer">
+        <div class="footer-inner">
+          <div>
+            <div class="brand-name">EvidenceOps</div>
+            <div class="micro">Contact: <a href="mailto:evidenceopsco@gmail.com">evidenceopsco@gmail.com</a> · GitHub: <a href="https://github.com/evidenceopsco" target="_blank" rel="noopener">@evidenceopsco</a></div>
+          </div>
+          <div class="micro">© <span id="year"></span> EvidenceOps</div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
