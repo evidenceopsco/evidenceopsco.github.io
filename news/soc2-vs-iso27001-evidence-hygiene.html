@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="SOC 2 vs ISO 27001: frameworks differ, evidence hygiene doesn’t. EvidenceOps report." />
+    <meta property="og:title" content="SOC 2 vs ISO 27001: frameworks differ, evidence hygiene doesn’t" />
+    <meta property="og:description" content="Feature report: why teams run both, and how to design evidence workflows that avoid duplicate work." />
+    <meta property="og:type" content="article" />
+    <link rel="alternate" href="/news/soc2-vs-iso27001-evidence-hygiene.html" hreflang="en" />
+    <link rel="alternate" href="/zh/news/soc2-vs-iso27001-evidence-hygiene.html" hreflang="zh-Hant" />
+    <title>SOC 2 vs ISO 27001: frameworks differ, evidence hygiene doesn’t</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css?v=20260313-4" />
+  </head>
+  <body>
+    <div class="top-banner" role="status" aria-label="Announcement">
+      <div class="wrap top-banner-inner">
+        <div class="banner-left">
+          <span class="badge">Report</span>
+          <span class="banner-text">EvidenceOps reports: market signals → evidence operations.</span>
+        </div>
+        <a class="banner-link" href="/news/">All reports</a>
+      </div>
+    </div>
+
+    <header class="wrap header">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M12 2l8 4v6c0 5-3.4 9.4-8 10-4.6-.6-8-5-8-10V6l8-4zm0 2.2L6 7v5c0 4 2.6 7.6 6 8.2 3.4-.6 6-4.2 6-8.2V7l-6-2.8z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="brand-name">EvidenceOps</div>
+          <div class="brand-tag">SOC 2 evidence, on rails</div>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/news/" aria-current="page">Reports</a>
+        <a href="/zh/news/" aria-label="切換到繁體中文">中文</a>
+        <a class="btn btn-secondary" href="/zh/#contact">Book a call</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="wrap section">
+        <div class="box">
+          <div class="kicker">Feature report</div>
+          <h1 style="margin:6px 0 6px; font-size:32px; letter-spacing:-.02em">SOC 2 vs ISO 27001: frameworks differ, evidence hygiene doesn’t</h1>
+          <p class="sublead" style="margin:0">Frameworks change vocabulary. Auditors still ask for the same fundamentals: scope, timestamps, owners, approvals, and traceability.</p>
+          <p class="micro" style="margin:10px 0 0">Updated: 2026‑03‑14 · Reading time: ~4 min</p>
+        </div>
+
+        <div class="box" style="margin-top:14px">
+          <h2 style="margin:0 0 8px; font-size:18px">Why teams run both</h2>
+          <p class="sublead">ISO 27001 often provides an internal management backbone (ISMS). SOC 2 is commonly used as customer-facing assurance in B2B sales. In practice, teams adopt both because customers ask for different “proof formats”.</p>
+        </div>
+
+        <div class="grid-2" style="margin-top:14px">
+          <section class="box">
+            <h2 style="margin:0 0 8px; font-size:18px">The trap: duplicating evidence work</h2>
+            <ul class="dot">
+              <li>Separate spreadsheets per framework.</li>
+              <li>Different naming conventions per team.</li>
+              <li>Evidence stored in multiple locations without a source of truth.</li>
+            </ul>
+            <p class="sublead">The result: every audit becomes a re-build, not a re-run.</p>
+          </section>
+
+          <section class="box">
+            <h2 style="margin:0 0 8px; font-size:18px">The fix: framework-agnostic evidence hygiene</h2>
+            <ul class="dot">
+              <li><strong>One evidence ID</strong> per artifact with timestamps.</li>
+              <li><strong>One owner</strong> per control area.</li>
+              <li><strong>One approved chain</strong>: ticket → approval → change/config → audit log.</li>
+              <li><strong>One index</strong> that maps evidence to whichever framework you need.</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="box" style="margin-top:14px">
+          <h2 style="margin:0 0 8px; font-size:18px">EvidenceOps commentary</h2>
+          <p class="sublead">You don’t need two separate “compliance engines”. You need one evidence pipeline, and two views: ISO controls and SOC 2 controls. The pipeline is the expensive part — make it repeatable.</p>
+          <p class="sublead">Our 14‑day PoV ships an evidence pack sample + a control/evidence matrix, which becomes the base for mapping across frameworks.</p>
+          <div class="cta" style="margin-top:10px">
+            <a class="btn btn-primary" href="/zh/#contact">Book a 20‑min fit call</a>
+            <a class="btn btn-secondary" href="/assets/evidenceops-onepager-tw.pdf" target="_blank" rel="noopener">Download one‑pager</a>
+          </div>
+        </div>
+
+        <div class="box" style="margin-top:14px">
+          <h2 style="margin:0 0 8px; font-size:18px">Sources (public)</h2>
+          <ul class="dot">
+            <li>EY explainer: <a href="https://www.ey.com/zh_tw/insights/consulting/soc2-vs-iso27001-infosec-certification-guide" target="_blank" rel="noopener">SOC 2 vs ISO 27001</a></li>
+          </ul>
+          <p class="micro" style="margin:0">We reference public sources only. This report does not imply a customer relationship.</p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="wrap footer">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-title">EvidenceOps</div>
+          <p class="footer-text">Auditor-ready SOC 2 evidence packs for Google Workspace, GitHub, and Jira — with approval gates and audit trails.</p>
+        </div>
+        <div>
+          <div class="footer-title">Links</div>
+          <ul class="footer-links">
+            <li><a href="/news/">Reports</a></li>
+            <li><a href="/cases.html">Use cases</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="/zh/">中文</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-title">Contact</div>
+          <ul class="footer-links">
+            <li><a href="mailto:evidenceopsco@gmail.com">evidenceopsco@gmail.com</a></li>
+            <li><a href="https://github.com/evidenceopsco" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© <span id="y"></span> EvidenceOps Co. All rights reserved.</div>
+    </footer>
+
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

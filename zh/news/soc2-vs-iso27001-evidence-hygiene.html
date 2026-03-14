@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="專題：SOC 2 vs ISO 27001：框架不同，但證據衛生（evidence hygiene）是一樣的。EvidenceOps" />
+    <meta property="og:title" content="SOC 2 vs ISO 27001：框架不同，但證據衛生（evidence hygiene）是一樣的" />
+    <meta property="og:description" content="專題報導：為什麼很多公司兩個都跑，以及如何用一條 evidence pipeline 避免每次稽核都重做。" />
+    <meta property="og:type" content="article" />
+    <link rel="alternate" href="/news/soc2-vs-iso27001-evidence-hygiene.html" hreflang="en" />
+    <link rel="alternate" href="/zh/news/soc2-vs-iso27001-evidence-hygiene.html" hreflang="zh-Hant" />
+    <title>SOC 2 vs ISO 27001：框架不同，但證據衛生（evidence hygiene）是一樣的</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../styles.css?v=20260313-4" />
+  </head>
+  <body>
+    <div class="top-banner" role="status" aria-label="公告">
+      <div class="wrap top-banner-inner">
+        <div class="banner-left">
+          <span class="badge">專題</span>
+          <span class="banner-text">EvidenceOps 專題：市場訊號 → 證據營運。</span>
+        </div>
+        <a class="banner-link" href="/zh/news/">回專題列表</a>
+      </div>
+    </div>
+
+    <header class="wrap header">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M12 2l8 4v6c0 5-3.4 9.4-8 10-4.6-.6-8-5-8-10V6l8-4zm0 2.2L6 7v5c0 4 2.6 7.6 6 8.2 3.4-.6 6-4.2 6-8.2V7l-6-2.8z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="brand-name">EvidenceOps</div>
+          <div class="brand-tag">把 SOC 2 佐證做成可營運的流程</div>
+        </div>
+      </div>
+      <nav class="nav" aria-label="主選單">
+        <a href="/zh/">首頁</a>
+        <a href="/zh/news/" aria-current="page">專題報導</a>
+        <a href="/news/" aria-label="Switch to English">EN</a>
+        <a class="btn btn-secondary" href="/zh/#contact">預約適配通話</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="wrap section">
+        <div class="box">
+          <div class="kicker">專題報導</div>
+          <h1 style="margin:6px 0 6px; font-size:32px; letter-spacing:-.02em">SOC 2 vs ISO 27001：框架不同，但證據衛生（evidence hygiene）是一樣的</h1>
+          <p class="sublead" style="margin:0">框架會改用詞，但稽核問的其實很固定：範圍、時間戳、Owner、審批與可追溯性。</p>
+          <p class="micro" style="margin:10px 0 0">更新：2026‑03‑14 · 閱讀時間：約 4 分鐘</p>
+        </div>
+
+        <div class="box" style="margin-top:14px">
+          <h2 style="margin:0 0 8px; font-size:18px">背景：為什麼很多公司兩套都跑？</h2>
+          <p class="sublead">ISO 27001 常被用作內部治理骨架（ISMS）；SOC 2 則更常被企業客戶視為「可採購/可交付」的鑑證材料。當你的客戶來自不同市場，最後就會遇到：同一件事，要用不同框架語言解釋。</p>
+        </div>
+
+        <div class="grid-2" style="margin-top:14px">
+          <section class="box">
+            <h2 style="margin:0 0 8px; font-size:18px">陷阱：為每個框架重做一套蒐證</h2>
+            <ul class="dot">
+              <li>每個框架各一張表、各一個資料夾。</li>
+              <li>命名規則與責任分工不一致。</li>
+              <li>證據放多處，沒有 single source of truth。</li>
+            </ul>
+            <p class="sublead">結果是：每次稽核都像重建，而不是重跑。</p>
+          </section>
+
+          <section class="box">
+            <h2 style="margin:0 0 8px; font-size:18px">解法：用框架無關的 evidence hygiene</h2>
+            <ul class="dot">
+              <li><strong>一份證據一個 ID</strong>，附時間戳與來源。</li>
+              <li><strong>一個 control area 一個 owner</strong>，責任清楚。</li>
+              <li><strong>一條審批鏈</strong>：ticket → 審批 → 變更/設定 → audit log。</li>
+              <li><strong>一份索引</strong>，再映射到 SOC 2/ISO 27001/問卷。</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="box" style="margin-top:14px">
+          <h2 style="margin:0 0 8px; font-size:18px">EvidenceOps 點評：你不需要兩套引擎，你需要一條可重跑的管線</h2>
+          <p class="sublead">昂貴的不是框架，而是蒐證/審核/審批/留存。把這條 evidence pipeline 做成可重跑，你就能用不同視角（SOC 2 / ISO / 問卷）輸出材料，而不必每次重做。</p>
+          <p class="sublead">我們的 14 天 PoV 會交付 evidence pack 樣張 + control/evidence matrix，可作為後續多框架映射的基底。</p>
+          <div class="cta" style="margin-top:10px">
+            <a class="btn btn-primary" href="/zh/#contact">填 PoV 需求表</a>
+            <a class="btn btn-secondary" href="/assets/evidenceops-onepager-tw.pdf" target="_blank" rel="noopener">下載一頁式 PDF</a>
+          </div>
+        </div>
+
+        <div class="box" style="margin-top:14px">
+          <h2 style="margin:0 0 8px; font-size:18px">來源（公開）</h2>
+          <ul class="dot">
+            <li>EY 說明文：<a href="https://www.ey.com/zh_tw/insights/consulting/soc2-vs-iso27001-infosec-certification-guide" target="_blank" rel="noopener">SOC 2 vs ISO 27001</a></li>
+          </ul>
+          <p class="micro" style="margin:0">僅引用公開資訊；不代表合作關係。</p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="wrap footer">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-title">EvidenceOps</div>
+          <p class="footer-text">把 SOC 2 佐證做成可交付、可重跑、可追溯的流程（先從 Google Workspace、GitHub、Jira 切入）。</p>
+        </div>
+        <div>
+          <div class="footer-title">連結</div>
+          <ul class="footer-links">
+            <li><a href="/zh/news/">專題報導</a></li>
+            <li><a href="/zh/cases.html">使用情境</a></li>
+            <li><a href="/zh/pricing.html">方案/定價</a></li>
+            <li><a href="/news/">English</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-title">聯絡</div>
+          <ul class="footer-links">
+            <li><a href="mailto:evidenceopsco@gmail.com">evidenceopsco@gmail.com</a></li>
+            <li><a href="https://github.com/evidenceopsco" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© <span id="y"></span> EvidenceOps Co. All rights reserved.</div>
+    </footer>
+
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
